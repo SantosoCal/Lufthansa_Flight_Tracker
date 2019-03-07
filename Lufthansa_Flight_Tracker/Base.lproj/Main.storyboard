@@ -1,24 +1,179 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gDd-cx-Kp7">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Tab Bar Controller-->
+        <scene sceneID="LPn-A3-blH">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <tabBarController id="gDd-cx-Kp7" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="twl-mo-oaI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.3927921660958904" alpha="0.0" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" red="0.0" green="0.0" blue="0.39215686274509803" alpha="0.0" colorSpace="calibratedRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="kAR-L7-Vig" kind="relationship" relationship="viewControllers" id="Bll-p5-uzc"/>
+                        <segue destination="aXJ-08-XIK" kind="relationship" relationship="viewControllers" id="bhM-NQ-YJk"/>
+                        <segue destination="dpd-s8-83H" kind="relationship" relationship="viewControllers" id="6Kx-hM-NSP"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i3N-Uh-ctL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2892" y="-228"/>
+        </scene>
+        <!-- -->
+        <scene sceneID="tEL-Ls-qEA">
+            <objects>
+                <navigationController id="kAR-L7-Vig" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title=" " id="rbj-2v-Z02"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Vfv-Pp-9V8">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="zqw-wk-18P" kind="relationship" relationship="rootViewController" id="ErZ-ch-o7c"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cEC-B7-0HZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1857" y="232"/>
+        </scene>
+        <!-- -->
+        <scene sceneID="JKa-xD-q52">
+            <objects>
+                <navigationController id="aXJ-08-XIK" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title=" " id="zRu-fj-6XY"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="RA4-5y-7hD">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="pzM-ej-Tgn" kind="relationship" relationship="rootViewController" id="wpb-DP-GzC"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TuD-10-Vbh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1858" y="-604"/>
+        </scene>
+        <!--Map View Controller-->
+        <scene sceneID="UPt-oq-CWV">
+            <objects>
+                <viewController id="pzM-ej-Tgn" customClass="MapViewController" customModule="Lufthansa_Flight_Tracker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0Gt-Z3-vpm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="g49-9q-lPZ"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="BzF-dt-fmG"/>
+                    <connections>
+                        <segue destination="gLu-l6-nHU" kind="show" identifier="showAirport" id="ZC2-co-jXb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fcv-fc-DFH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-799" y="-604"/>
+        </scene>
+        <!--Airport Info View Controller-->
+        <scene sceneID="91R-PT-esB">
+            <objects>
+                <viewController id="gLu-l6-nHU" customClass="AirportInfoViewController" customModule="Lufthansa_Flight_Tracker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hUt-hU-QqO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="aAd-Gx-AdA"/>
+                    </view>
+                    <connections>
+                        <segue destination="cbU-vP-eMG" kind="show" identifier="showFlight" id="taR-Ti-5LT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7tY-om-rlx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="254" y="-604"/>
+        </scene>
+        <!--Flight Info View Controller-->
+        <scene sceneID="zpT-Rw-kzj">
+            <objects>
+                <viewController id="cbU-vP-eMG" customClass="FlightInfoViewController" customModule="Lufthansa_Flight_Tracker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Oh3-Cp-21r">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="9IJ-HD-4tX"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6h9-Ql-GbV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1346" y="-604"/>
+        </scene>
+        <!--Flight Status View Controller-->
+        <scene sceneID="5ut-Nv-Oed">
+            <objects>
+                <viewController id="zqw-wk-18P" customClass="FlightStatusViewController" customModule="Lufthansa_Flight_Tracker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fbE-91-FXG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="A2k-QL-yAj"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="c7l-F2-TcY"/>
+                    <connections>
+                        <segue destination="cbU-vP-eMG" kind="show" identifier="showFlightStatus" id="2UP-R3-inC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wri-hi-Yas" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-798" y="232"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="H8A-OS-GJF">
+            <objects>
+                <navigationController id="dpd-s8-83H" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="bB6-mI-i0i"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xkF-AB-N53">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="YNQ-ce-cCo" kind="relationship" relationship="rootViewController" id="ZSV-Lw-4Fc"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SSW-cf-8jA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1895" y="932"/>
+        </scene>
+        <!--Favorites View Controller-->
+        <scene sceneID="cFg-xw-dao">
+            <objects>
+                <viewController id="YNQ-ce-cCo" customClass="FavoritesViewController" customModule="Lufthansa_Flight_Tracker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oKp-bp-yD3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="WnD-mB-opE"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="BcC-ax-ZlM"/>
+                    <connections>
+                        <segue destination="cbU-vP-eMG" kind="show" identifier="showFlightFav" id="YhC-ZU-To3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BWa-1E-PgN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-799" y="931"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="YhC-ZU-To3"/>
+    </inferredMetricsTieBreakers>
 </document>
